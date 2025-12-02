@@ -1,19 +1,18 @@
 export default {
     testEnvironment: 'node',
     transform: {},
-    extensionsToTreatAsEsm: [ '.mjs' ],
-    testMatch: [
-        '**/tests/**/*.test.mjs',
-        '**/tests/**/*.spec.mjs'
-    ],
+    verbose: false,
+    roots: [ './tests' ],
     collectCoverageFrom: [
-        'src/**/*.mjs',
-        '!src/**/*.test.mjs',
-        '!src/**/*.spec.mjs'
+        'src/**/*.mjs'
     ],
-    coverageDirectory: 'coverage',
-    coverageReporters: [ 'text', 'lcov', 'html' ],
-    moduleFileExtensions: [ 'mjs', 'js', 'json' ],
-    testPathIgnorePatterns: [ '/node_modules/' ],
-    verbose: false
+    coverageThreshold: {
+        'src/**/*.mjs': {
+            statements: 0,
+            branches: 0,
+            functions: 0,
+            lines: 0
+        }
+    },
+    coverageReporters: [ 'text', 'lcov', 'html' ]
 }
