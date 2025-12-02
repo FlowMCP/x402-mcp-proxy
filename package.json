@@ -4,9 +4,9 @@
   "description": "",
   "main": "./src/index.mjs",
   "scripts": {
-    "test": "jest",
-    "test:coverage:src": "jest --coverage --collectCoverageFrom='src/**/*.mjs'",
-    "test:file": "jest"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:coverage:src": "node --experimental-vm-modules node_modules/jest/bin/jest.js --coverage --collectCoverageFrom='src/**/*.mjs'",
+    "test:file": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
   "repository": {
     "type": "git",
