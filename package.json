@@ -1,0 +1,26 @@
+{
+  "name": "x402-mcp-proxy",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./src/index.mjs",
+  "scripts": {
+    "test": "jest",
+    "test:coverage:src": "jest --coverage --collectCoverageFrom='src/**/*.mjs'",
+    "test:file": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlowMCP/x402-mcp-proxy.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/FlowMCP/x402-mcp-proxy/issues"
+  },
+  "homepage": "https://github.com/FlowMCP/x402-mcp-proxy#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

@@ -1,0 +1,6 @@
+node_modules
+
+# Test Coverage (nicht im Repo speichern)
+coverage/
+.nyc_output/
+*.lcov
